@@ -11,5 +11,12 @@ Mix.install([{:wordninja, github: "ruslandoga/wordninja"}])
 # suggestion: load in a separate process for quicker garbage collection
 model = Wordninja.load()
 
-"this is test" = Wordninja.split(model, "thisistest")
+Wordninja.split(model, "thisistest")
+#=> ["this", "is", "test"]
+
+Wordninja.split(model, "settingsbillingsubscription")
+#=> ["settings", "billing", "subscription"]
+
+Wordninja.split(model, "settbillsub")
+#=> ["sett", "bill", "sub"]
 ```
