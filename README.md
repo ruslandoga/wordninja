@@ -1,9 +1,9 @@
 Quick and dirty port of https://github.com/keredson/wordninja
 
 Needs more work to be usable:
-- improve performance, use ideas from https://github.com/stephantul/wordninja2/tree/main
+- improve performance, use ideas from https://github.com/stephantul/wordninja2
 - integrate with wordfreq
-- fuzzy matching with trigrams
+- fuzzy matching
 
 ```elixir
 Mix.install([{:wordninja, github: "ruslandoga/wordninja"}])
